@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Add New Person</title>
+  <style>
+    .form-container {
+      display: grid;
+      grid-template-columns: 100px 200px;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>  
+  <h2>Add New Person</h2>
+  <form th:action="@{/send-values-redirect}" method="post" th:object="${person}">
+      <div class="form-container">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" th:field="*{firstName}">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" th:field="*{lastName}">
+        <input type="submit" value="Submit">
+      </div>
+  </form>
+</body>
+</html>

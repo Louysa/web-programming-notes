@@ -606,3 +606,451 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2025-03-18T15:07:03.149+03:00 DEBUG 17228 --- [demo] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, application/json, application/*+json]
 2025-03-18T15:07:03.150+03:00 DEBUG 17228 --- [demo] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
 2025-03-18T15:07:03.150+03:00 DEBUG 17228 --- [demo] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T15:10:56.595+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-03-18T15:10:56.597+03:00  INFO 17228 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:10:56.601+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:10:56.651+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:10:56.652+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:10:56.790+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:10:56.791+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:10:56.791+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:10:56.798+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:10:56.799+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2025-03-18T15:10:56.809+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:10:56.823+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:10:56.830+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:10:56.832+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:10:56.833+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:10:56.861+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:10:56.862+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:10:56.870+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:10:56.873+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.238 seconds (process running for 255.586)
+2025-03-18T15:10:56.874+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:11:14.484+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-03-18T15:11:14.485+03:00  INFO 17228 --- [demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:11:14.487+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:11:14.551+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:11:14.552+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:11:14.671+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:11:14.672+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:11:14.672+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:11:14.678+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:11:14.679+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2025-03-18T15:11:14.688+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:11:14.702+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:11:14.708+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:11:14.710+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:11:14.712+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:11:14.741+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:11:14.742+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:11:14.752+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:11:14.755+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.218 seconds (process running for 273.468)
+2025-03-18T15:11:14.757+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:12:44.941+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:12:44.943+03:00  INFO 17228 --- [demo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:12:44.945+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:12:45.012+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:12:45.012+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:12:45.130+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:12:45.130+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:12:45.130+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:12:45.137+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:12:45.137+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 124 ms
+2025-03-18T15:12:45.145+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:12:45.155+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:12:45.161+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:12:45.163+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:12:45.164+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:12:45.188+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:12:45.189+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:12:45.195+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:12:45.198+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.199 seconds (process running for 363.911)
+2025-03-18T15:12:45.198+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:13:37.101+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:13:37.102+03:00  INFO 17228 --- [demo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:13:37.104+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:13:37.169+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:13:37.169+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:13:37.281+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:13:37.282+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:13:37.282+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:13:37.290+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:13:37.290+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2025-03-18T15:13:37.297+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:13:37.306+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:13:37.313+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:13:37.315+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:13:37.316+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:13:37.335+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:13:37.336+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:13:37.342+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:13:37.344+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.187 seconds (process running for 416.058)
+2025-03-18T15:13:37.345+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:13:47.850+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:13:47.852+03:00  INFO 17228 --- [demo] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:13:47.854+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:13:47.920+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:13:47.920+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:13:48.020+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:13:48.021+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:13:48.021+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:13:48.027+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:13:48.027+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 106 ms
+2025-03-18T15:13:48.034+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:13:48.044+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:13:48.050+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:13:48.051+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:13:48.054+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:13:48.073+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:13:48.074+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:13:48.081+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:13:48.083+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.175 seconds (process running for 426.796)
+2025-03-18T15:13:48.084+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:13:52.529+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:13:52.531+03:00  INFO 17228 --- [demo] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:13:52.533+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:13:52.601+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:13:52.602+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:13:52.715+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:13:52.716+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:13:52.716+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:13:52.723+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:13:52.723+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2025-03-18T15:13:52.731+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:13:52.741+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:13:52.746+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:13:52.747+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:13:52.748+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:13:52.771+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:13:52.772+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:13:52.778+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:13:52.780+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.189 seconds (process running for 431.493)
+2025-03-18T15:13:52.781+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:13:54.187+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 2 deletions, 2 modifications)
+2025-03-18T15:13:54.188+03:00  INFO 17228 --- [demo] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:13:54.191+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:14:16.320+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:14:16.320+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:14:16.440+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:14:16.441+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:14:16.441+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:14:16.450+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:14:16.450+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2025-03-18T15:14:16.459+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:14:16.470+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:14:16.476+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:14:16.478+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:14:16.480+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:14:16.503+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:14:16.504+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:14:16.510+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:14:16.511+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.204 seconds (process running for 455.225)
+2025-03-18T15:14:16.512+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:14:19.946+03:00  INFO 17228 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:14:19.947+03:00  INFO 17228 --- [demo] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:14:19.950+03:00  INFO 17228 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:14:20.000+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 17228 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:14:20.000+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:14:20.096+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:14:20.097+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:14:20.097+03:00  INFO 17228 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:14:20.104+03:00  INFO 17228 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:14:20.105+03:00  INFO 17228 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
+2025-03-18T15:14:20.111+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:14:20.119+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:14:20.124+03:00 DEBUG 17228 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:14:20.125+03:00 DEBUG 17228 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:14:20.126+03:00 DEBUG 17228 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:14:20.145+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:14:20.146+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:14:20.152+03:00  INFO 17228 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:14:20.154+03:00  INFO 17228 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.165 seconds (process running for 458.868)
+2025-03-18T15:14:20.155+03:00  INFO 17228 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:14:30.376+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:14:30.378+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:14:30.410+03:00  INFO 13628 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-18T15:14:30.410+03:00  INFO 13628 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-18T15:14:31.147+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:14:31.156+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:14:31.156+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:14:31.180+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:14:31.180+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2025-03-18T15:14:31.270+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:14:31.346+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:14:31.383+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:14:31.397+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:14:31.440+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:14:31.581+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:14:31.586+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:14:31.624+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:14:31.632+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.531 seconds (process running for 1.91)
+2025-03-18T15:14:33.418+03:00  INFO 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18T15:14:33.418+03:00  INFO 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-18T15:14:33.418+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-18T15:14:33.418+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-18T15:14:33.419+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-18T15:14:33.419+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6260b334
+2025-03-18T15:14:33.419+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4323e199
+2025-03-18T15:14:33.419+03:00 DEBUG 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-18T15:14:33.420+03:00  INFO 13628 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-18T15:14:41.569+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/demo/show", parameters={}
+2025-03-18T15:14:41.574+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.DemoController#showView()
+2025-03-18T15:14:41.586+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2025-03-18T15:14:41.688+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T15:19:22.105+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-18T15:19:22.108+03:00  INFO 13628 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:19:22.112+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:19:22.167+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:19:22.167+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:19:22.331+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:19:22.331+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:19:22.332+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:19:22.341+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:19:22.341+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2025-03-18T15:19:22.354+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:19:22.366+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:19:22.375+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:19:22.377+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:19:22.381+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:19:22.413+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:19:22.415+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:19:22.423+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:19:22.426+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.276 seconds (process running for 292.705)
+2025-03-18T15:19:22.429+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:20:03.286+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-18T15:20:03.287+03:00  INFO 13628 --- [demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:20:03.289+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:20:03.335+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:20:03.335+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:20:03.476+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:20:03.477+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:20:03.477+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:20:03.484+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:20:03.484+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2025-03-18T15:20:03.496+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:20:03.508+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:20:03.517+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:20:03.519+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:20:03.522+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:20:03.548+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:20:03.549+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:20:03.556+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:20:03.558+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.236 seconds (process running for 333.837)
+2025-03-18T15:20:03.559+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:22:17.287+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:22:17.288+03:00  INFO 13628 --- [demo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:22:17.290+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:22:17.337+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:22:17.337+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:22:17.471+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:22:17.473+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:22:17.474+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:22:17.485+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:22:17.485+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2025-03-18T15:22:17.497+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:22:17.512+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:22:17.521+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:22:17.523+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:22:17.527+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:22:17.564+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:22:17.566+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:22:17.575+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:22:17.578+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.254 seconds (process running for 467.857)
+2025-03-18T15:22:17.580+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:22:18.984+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:22:18.985+03:00  INFO 13628 --- [demo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:22:18.987+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:22:19.034+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:22:19.034+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:22:19.138+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:22:19.138+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:22:19.138+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:22:19.147+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:22:19.147+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2025-03-18T15:22:19.158+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:22:19.167+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:22:19.174+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:22:19.175+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:22:19.178+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:22:19.198+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:22:19.200+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:22:19.206+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:22:19.209+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.187 seconds (process running for 469.487)
+2025-03-18T15:22:19.210+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:22:33.747+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:22:33.748+03:00  INFO 13628 --- [demo] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:22:33.751+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:22:33.794+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:22:33.794+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:22:33.897+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:22:33.898+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:22:33.898+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:22:33.906+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:22:33.906+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 111 ms
+2025-03-18T15:22:33.916+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:22:33.926+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:22:33.932+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:22:33.933+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:22:33.936+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:22:33.953+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:22:33.954+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:22:33.960+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:22:33.961+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.177 seconds (process running for 484.241)
+2025-03-18T15:22:33.963+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:22:42.437+03:00  INFO 13628 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:22:42.438+03:00  INFO 13628 --- [demo] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:22:42.440+03:00  INFO 13628 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:22:42.486+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 13628 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:22:42.486+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:22:42.582+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:22:42.582+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:22:42.583+03:00  INFO 13628 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:22:42.589+03:00  INFO 13628 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:22:42.589+03:00  INFO 13628 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 102 ms
+2025-03-18T15:22:42.596+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:22:42.606+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:22:42.610+03:00 DEBUG 13628 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:22:42.612+03:00 DEBUG 13628 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:22:42.614+03:00 DEBUG 13628 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:22:42.632+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:22:42.632+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:22:42.639+03:00  INFO 13628 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:22:42.642+03:00  INFO 13628 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.166 seconds (process running for 492.92)
+2025-03-18T15:22:42.643+03:00  INFO 13628 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:22:49.638+03:00  INFO 13628 --- [demo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18T15:22:49.639+03:00  INFO 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-18T15:22:49.639+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-18T15:22:49.639+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-18T15:22:49.639+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-18T15:22:49.640+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b56a685
+2025-03-18T15:22:49.640+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@25914d9f
+2025-03-18T15:22:49.640+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-18T15:22:49.640+03:00  INFO 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-18T15:22:49.640+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/demo/modeltest", parameters={}
+2025-03-18T15:22:49.641+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.DemoController#modeltest(Model)
+2025-03-18T15:22:49.644+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2025-03-18T15:22:49.714+03:00 DEBUG 13628 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T15:23:08.949+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 15580 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:23:08.951+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:23:08.983+03:00  INFO 15580 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-18T15:23:08.983+03:00  INFO 15580 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-18T15:23:09.743+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:23:09.751+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:23:09.752+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:23:09.773+03:00  INFO 15580 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:23:09.774+03:00  INFO 15580 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2025-03-18T15:23:09.871+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:23:09.946+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:23:09.982+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:23:09.999+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:23:10.040+03:00 DEBUG 15580 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:23:10.196+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:23:10.202+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:23:10.244+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:23:10.253+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.607 seconds (process running for 2.001)
+2025-03-18T15:23:11.971+03:00  INFO 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18T15:23:11.971+03:00  INFO 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-18T15:23:11.972+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-18T15:23:11.972+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-18T15:23:11.972+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-18T15:23:11.972+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ce23b27
+2025-03-18T15:23:11.973+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4a9a60dc
+2025-03-18T15:23:11.973+03:00 DEBUG 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-18T15:23:11.973+03:00  INFO 15580 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-18T15:23:15.383+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/demo/modeltest", parameters={}
+2025-03-18T15:23:15.389+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.DemoController#modeltest(Model)
+2025-03-18T15:23:15.400+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2025-03-18T15:23:15.532+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T15:24:29.443+03:00  INFO 15580 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:24:29.445+03:00  INFO 15580 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:24:29.449+03:00  INFO 15580 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:24:29.528+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 15580 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:24:29.529+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:24:29.695+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:24:29.696+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:24:29.696+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:24:29.704+03:00  INFO 15580 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:24:29.705+03:00  INFO 15580 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2025-03-18T15:24:29.717+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:24:29.732+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:24:29.739+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:24:29.741+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:24:29.744+03:00 DEBUG 15580 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:24:29.776+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:24:29.777+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:24:29.786+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:24:29.790+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.28 seconds (process running for 81.538)
+2025-03-18T15:24:29.791+03:00  INFO 15580 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:25:07.572+03:00  INFO 15580 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:25:07.573+03:00  INFO 15580 --- [demo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:25:07.576+03:00  INFO 15580 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:25:07.645+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 15580 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:25:07.645+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:25:07.793+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:25:07.795+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:25:07.795+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:25:07.803+03:00  INFO 15580 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:25:07.803+03:00  INFO 15580 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 157 ms
+2025-03-18T15:25:07.814+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:25:07.826+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:25:07.833+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:25:07.834+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:25:07.838+03:00 DEBUG 15580 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:25:07.862+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:25:07.864+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:25:07.871+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:25:07.873+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.244 seconds (process running for 119.621)
+2025-03-18T15:25:07.874+03:00  INFO 15580 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:25:10.859+03:00  INFO 15580 --- [demo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18T15:25:10.859+03:00  INFO 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-18T15:25:10.859+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-18T15:25:10.859+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-18T15:25:10.860+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-18T15:25:10.860+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4876e902
+2025-03-18T15:25:10.860+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@46b10e7c
+2025-03-18T15:25:10.861+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-18T15:25:10.861+03:00  INFO 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-18T15:25:10.861+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/demo/modelmaptest", parameters={}
+2025-03-18T15:25:10.862+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.DemoController#modelmaptest(ModelMap)
+2025-03-18T15:25:10.863+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2025-03-18T15:25:10.868+03:00 DEBUG 15580 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T15:26:50.264+03:00  INFO 15580 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:26:50.265+03:00  INFO 15580 --- [demo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:26:50.267+03:00  INFO 15580 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:26:50.331+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 15580 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:26:50.331+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:26:50.444+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:26:50.445+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:26:50.445+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:26:50.452+03:00  INFO 15580 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:26:50.452+03:00  INFO 15580 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2025-03-18T15:26:50.460+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:26:50.470+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:26:50.476+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:26:50.478+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:26:50.481+03:00 DEBUG 15580 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:26:50.501+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:26:50.502+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:26:50.509+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:26:50.511+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.191 seconds (process running for 222.259)
+2025-03-18T15:26:50.512+03:00  INFO 15580 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-18T15:27:47.432+03:00  INFO 15580 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-18T15:27:47.433+03:00  INFO 15580 --- [demo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T15:27:47.435+03:00  INFO 15580 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T15:27:47.503+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.6 with PID 15580 (C:\Projects\SpringBoot-Test\demo\target\classes started by dogan in C:\Projects\SpringBoot-Test\demo)
+2025-03-18T15:27:47.503+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-18T15:27:47.624+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-18T15:27:47.625+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:27:47.625+03:00  INFO 15580 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:27:47.634+03:00  INFO 15580 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:27:47.635+03:00  INFO 15580 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 131 ms
+2025-03-18T15:27:47.641+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-18T15:27:47.652+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2025-03-18T15:27:47.659+03:00 DEBUG 15580 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-18T15:27:47.660+03:00 DEBUG 15580 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-18T15:27:47.663+03:00 DEBUG 15580 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-18T15:27:47.685+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-18T15:27:47.686+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-18T15:27:47.693+03:00  INFO 15580 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/demo'
+2025-03-18T15:27:47.695+03:00  INFO 15580 --- [demo] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.204 seconds (process running for 279.444)
+2025-03-18T15:27:47.696+03:00  INFO 15580 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

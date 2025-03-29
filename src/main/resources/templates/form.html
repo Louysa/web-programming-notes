@@ -15,10 +15,8 @@
   <h2>Add New Person</h2>
   <form th:action="@{/send-values-redirect}" method="post" th:object="${person}">
       <div class="form-container">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" th:field="*{firstName}">
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" th:field="*{lastName}">
+        <label for="fname">Full Name Name:</label>
+        <input type="text" id="fname" th:field="*{fullName}">
         <input type="submit" value="Submit">
       </div>
   </form>

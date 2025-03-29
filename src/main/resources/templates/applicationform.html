@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Application Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css">
+	<style>
+		.form-container {
+			display: grid;
+			grid-template-columns: 170px 200px auto;
+			gap: 15px;
+		}
+
+		.submit-button {
+			grid-column: span 3;
+			justify-self: left;
+			width: 80px;
+		}
+	</style>
+</head>
+<
+<body>
+	<h2>Application Form</h2>
+	<p>Please fill out the following form:</p>
+	<form th:action="@{/send}" method="post" th:object="${personApplication}">
+		<div class="form-container">
+			<label for="fn">Full Name:</label>
+			<input type="text" id="fn" th:field="*{fullName}">
+			<div><span th:errors="*{fullName}" class="error"></span></div>
+
+			<label for="eml">E-mail:</label>
+			<input type="text" id="eml" th:field="*{email}">
+			<div><span th:errors="*{email}" class="error"></span></div>
+			
+			<label for="dob">Date of Birth:</label>
+			<input type="text" id="dob" th:field="*{dateOfBirth}">
+			<div><span th:errors="*{dateOfBirth}" class="error"></span></div>
+			
+			<label>Employment Status:</label>
+			<div>
+				<input type="radio" id="es1" value="Employed" th:field="*{employmentStatus}"> <label for="es1">Employed</label><br>
+				<input type="radio" id="es2" value="Unemployed" th:field="*{employmentStatus}"> <label for="es2">Unemployed</label><br>
+				<input type="radio" id="es3" value="Retired" th:field="*{employmentStatus}"> <label for="es3">Retired</label>
+			</div>
+			<div><span th:errors="*{employmentStatus}" class="error"></span></div>
+				
+			<label for="el">Education Level:</label>
+			<select id="el" th:field="*{educationLevel}">
+				<option value=""></option>
+				<option value="High School">High School</option>
+				<option value="Bachelor's Degree">Bachelor's Degree</option>
+				<option value="Master's Degree">Master's Degree</option>
+				<option value="Ph.D.">Ph.D.</option>
+			</select>
+			<div><span th:errors="*{educationLevel}" class="error"></span></div>
+			
+			<label for="yoe">Years of Experience:</label>
+			<input type="text" id="yoe" th:field="*{yearsOfExperience}">
+			<div><span th:errors="*{yearsOfExperience}" class="error"></span></div>
+
+			<label>Skills:</label>
+			<div>
+				<input type="checkbox" id="s1" value="Java" th:field="*{skills}"> <label for="s1">Java</label><br>
+				<input type="checkbox" id="s2" value="Python" th:field="*{skills}"> <label for="s2">Python</label><br>
+				<input type="checkbox" id="s3" value="C++" th:field="*{skills}"> <label for="s3">C++</label>
+			</div>
+			<div><span th:errors="*{skills}" class="error"></span></div>
+
+			<input type="submit" value="Send" class="submit-button">
+		</div>
+	</form>
+</body>
+
+</html>

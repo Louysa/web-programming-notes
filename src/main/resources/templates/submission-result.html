@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Submission Result</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css">
+	<style>
+		.result-container {
+			display: grid;
+			grid-template-columns: 170px 200px;
+			gap: 15px;
+		}
+	</style>	
+</head>
+
+<body>
+	<h2>Submission Result</h2>
+	<div class="result-container" th:object="${person}">
+		<span>Full Name:</span>
+		<span th:text="*{fullName}"></span>
+
+		<span>E-mail:</span>
+		<span th:text="*{email}"></span>
+
+		<span>Date of Birth:</span>
+		<span><span th:text="*{#temporals.format(dateOfBirth, 'dd-MM-yyyy')}"></span> (Age: <span th:text="*{age}"></span>)</span>
+
+		<span>Employment Status:</span>
+		<span th:text="*{employmentStatus}"></span>
+
+		<span>Education Level:</span>
+		<span th:text="*{educationLevel}"></span>
+
+		<span>Years of Experience:</span>
+		<span th:text="*{yearsOfExperience}"></span>
+
+		<span>Skills:</span>
+		<span>
+			<span th:each="item, status : *{skills}">
+				<span th:if="${status.last}" th:text="${item}"></span>
+				<span th:unless="${status.last}" th:text="${item} + ', '"></span>
+				<!--
+				<span th:text="${status.last} == true ? ${item} : ${item} + ', '"></span>
+				-->
+			</span>
+		</span>
+	</div>
+</body>
+
+</html>

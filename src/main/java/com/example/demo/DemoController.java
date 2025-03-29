@@ -1,19 +1,33 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.example.demo.model.Person;
+import com.example.demo.model.PersonApplication;
+import com.example.demo.validator.AgeValidator;
+
+import org.springframework.web.bind.annotation.RequestBody;
+
+import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+
 @Controller
 public class DemoController {
 
     private final DemoApplication demoApplication;
-
+    @Autowired
+	private AgeValidator ageValidator;
     DemoController(DemoApplication demoApplication) {
         this.demoApplication = demoApplication;
     }
@@ -55,6 +69,7 @@ public class DemoController {
     
     @PostMapping("/send-values")
     public String sendForm(@ModelAttribute Person person, Model model) {
+       
         model.addAttribute("person", person);
         return "personresult";
     }
@@ -62,8 +77,10 @@ public class DemoController {
     @PostMapping("/send-values-redirect")
     public String sendFormRedirect(@ModelAttribute Person person, RedirectAttributes attributes){
         attributes.addFlashAttribute("person",person);
+       
+
         return "redirect:/result";
-    }
+    } 
 
     @GetMapping("/result")
     public String showResult(Model model){
@@ -73,4 +90,35 @@ public class DemoController {
         }
         return "personresult";
     }
+
+
+    @GetMapping("/appForm")
+    public String showApplicationForm(Model model) {
+        model.addAttribute("personApplication", new PersonApplication());
+        return "applicationform";
+    }
+
+    @PostMapping("/send")
+    public String processForm(@Valid @ModelAttribute PersonApplication personApplication, BindingResult result, Model model, RedirectAttributes attributes) {
+        
+        ageValidator.validate(personApplication, result);
+
+        if(result.hasErrors()){
+            model.addAttribute("personApplication", personApplication);
+            return "applicationform";
+        }else{
+            attributes.addFlashAttribute("person",new Person(personApplication));
+            return "redirect:/subresult";
+        }
+    }
+    
+    @GetMapping("/subresult")
+    public String displayApplicationResult(Model model) {
+        if(!model.containsAttribute("person"))
+            return "redirect:/applicationform"; 
+        return  "submission-result";
+    }
+    
+
+    
 }

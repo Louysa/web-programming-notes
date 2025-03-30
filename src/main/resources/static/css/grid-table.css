@@ -1,0 +1,23 @@
+.grid-table {
+	display: grid;
+	grid-template-columns: 40px 1fr 2fr 2fr 2fr;
+	border: 1px solid #000000;
+	width: max-content;
+}
+
+.grid-header {
+	font-weight: bold;
+	background-color: #4c9599;
+	color: #ffffff;
+	padding: 5px;
+	border: 0px;
+}
+
+.grid-row {
+	display: contents; /* Allows children (grid-cell) to act like direct grid items */
+}
+
+.grid-cell {
+	padding: 5px;
+	border: 0px;
+}

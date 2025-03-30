@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<!-- With Thymeleaf -->
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
+<link rel="stylesheet" th:href="@{/css/grid-table.css}" />
+
+
+	<meta charset="utf-8">
+	<title>Person List</title>
+</head>
+
+<body>
+	<h2>Person List</h2>
+	<p>List of people in our database:</p>
+	<div th:unless="${#lists.isEmpty(persons)}" class="grid-table">
+	    <!-- Header Row -->
+	    <div class="grid-header"> </div>
+	    <div class="grid-header">ID</div>
+	    <div class="grid-header">First Name</div>
+	    <div class="grid-header">Last Name</div>
+	    <div class="grid-header">Date of Birth</div>
+
+	    <!-- Data Rows -->
+	    <div th:each="p : ${persons}" class="grid-row">
+	        <div class="grid-cell">
+                <a th:href="@{'/delete/' + ${p.id}}">
+	                <img th:src="@{/img/delete.png}" width="20" alt="Delete Icon"/>
+	            </a>
+	        </div>
+	        <div class="grid-cell" th:text="${p.id}"></div>
+	        <div class="grid-cell" th:text="${p.firstName}"></div>
+	        <div class="grid-cell" th:text="${p.lastName}"></div>
+	        <div class="grid-cell">
+	            <span th:if="${p.dateOfBirth != null}" th:text="${#temporals.format(p.dateOfBirth, 'dd-MM-yyyy')}"></span>
+	            <span th:if="${#strings.isEmpty(p.dateOfBirth)}" th:text="'---'"></span>
+	        </div>
+	    </div>
+	</div>
+	
+	<div th:if="${#lists.isEmpty(persons)}">
+		<p><em>No data found.</em></p>
+	</div>
+	<p>You can add a new person <a th:href="@{/newform}">here</a>.</p>	
+</body>
+
+</html>

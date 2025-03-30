@@ -1,0 +1,1 @@
+create table person(ID identity primary key, FNAME varchar(50), LNAME varchar(50), DATEOFBIRTH date);

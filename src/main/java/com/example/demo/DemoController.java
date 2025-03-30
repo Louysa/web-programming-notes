@@ -7,18 +7,26 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.demo.model.Person;
+import com.example.demo.model.Person2;
 import com.example.demo.model.PersonApplication;
+import com.example.demo.model.PersonFormData;
+import com.example.demo.services.DemoService;
 import com.example.demo.validator.AgeValidator;
 
-import org.springframework.web.bind.annotation.RequestBody;
+
 
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+
 
 
 
@@ -28,6 +36,11 @@ public class DemoController {
     private final DemoApplication demoApplication;
     @Autowired
 	private AgeValidator ageValidator;
+
+    @Autowired
+	private DemoService service;
+
+
     DemoController(DemoApplication demoApplication) {
         this.demoApplication = demoApplication;
     }
@@ -111,7 +124,19 @@ public class DemoController {
             return "redirect:/subresult";
         }
     }
+    @PostMapping("/sendnewform")
+    public String processNewForm(@Valid @ModelAttribute PersonFormData personFormData, BindingResult result, Model model) {
+        if(result.hasErrors()){
+            model.addAttribute("personFormData", new PersonFormData());
+            return "newform";
+        }else{
+            Person2 person = new Person2(personFormData);
+            service.create(person);
+            return "redirect:/list";
+        }
+    };
     
+
     @GetMapping("/subresult")
     public String displayApplicationResult(Model model) {
         if(!model.containsAttribute("person"))
@@ -119,6 +144,26 @@ public class DemoController {
         return  "submission-result";
     }
     
+    @GetMapping("/newform")
+    public String displayNewForm(Model model) {
+        model.addAttribute("personFormData", new PersonFormData());
+        return "new-form";
+    }
+    
+    @GetMapping("/list")
+    public String displayPersonList(Model model) {
+        model.addAttribute("persons", service.findAll());
+        return "person-list";
+    }
+    
 
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable long id, Model model) {
+        service.delete(id);
+        model.addAttribute("persons", service.findAll());
+        return "person-list";
+    }
+    
+    
     
 }

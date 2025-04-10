@@ -29,7 +29,7 @@ public class AgeValidator implements Validator {
 		Person p = new Person(personApplication);
 		int errorCount = errors.getFieldErrorCount("dateOfBirth");
 		if (errorCount == 0 && p.getAge() < 15)
-			errors.rejectValue("dateOfBirth", "my.custom.err");
+			errors.rejectValue("dateOfBirth", "my.custom.err","Age Validation Failed!");
 	}
 
 }

@@ -23,7 +23,7 @@
 <body>
 	<h2>Enter New Person</h2>
 	<p>Please fill the following form:</p>
-	<form th:action="@{/sendnewform}" method="post" th:object="${personFormData}">
+	<form th:action="@{/sendnewform}" method="post" th:object="${person}">
 		<div class="form-container">
 			<label for="fn">First Name:</label>
 			<input type="text" id="fn" th:field="*{firstName}">

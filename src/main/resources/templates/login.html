@@ -24,7 +24,7 @@
 	<h2>Login</h2>
 	<p>Please enter your username and password.</p>
 
-	<form action="/demo/login" method="post">	
+	<form th:action="@{/login}" method="post">
 		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
 		<div class="form-container">
 			<label for="user">Username:</label>
@@ -37,8 +37,8 @@
 		</div>		
 	</form>
 	
-	<p th:if="${req.getParameter('loginFailed')} == 'true'" class="error">Invalid username or password.</p>
-	<p th:if="${req.getParameter('logout')} != null">You have been logged out.</p>
+	<p th:if="${param.loginFailed}" class="error">Invalid username or password.</p>
+	<p th:if="${param.logout}" class="info">You have been logged out.</p>
 </body>
 
 </html>

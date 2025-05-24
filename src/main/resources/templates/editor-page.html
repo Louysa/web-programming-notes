@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Editor's Area</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<h2>Editor's Area</h2>
+	<p>Welcome to the editor's area!</p>
+	<p>Logged user: <span th:text="${loggedUser}"></span></p>
+	<p>Roles: <span th:text="${roles}"></span></p>
+
+	<form action="/logout" method="post">
+		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+		<input type="submit" value="Logout">
+	</form>
+</body>
+
+</html>

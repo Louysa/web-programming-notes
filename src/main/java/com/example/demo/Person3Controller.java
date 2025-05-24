@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.demo.model.Person3;
 import com.example.demo.services.Person3Service;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 
 @Controller
@@ -99,4 +100,21 @@ public class Person3Controller {
 		String[] name = new String[] { "Mark", "Taylor" };
 		return messageSource.getMessage("greet", name, LocaleContextHolder.getLocale());
 	}
+
+    @GetMapping("/default")
+    public String defaultPage() {
+        return "member-page";
+    }
+
+    @GetMapping("/login.html")
+    public String displayLoginPage(Model model, HttpServletRequest request) {
+        model.addAttribute("req", request);
+        return "login";
+    }
+
+	@GetMapping("/member-page.html")
+	public String displayPage() {
+		return "member-page";
+	}   
+
 }

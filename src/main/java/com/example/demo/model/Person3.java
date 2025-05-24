@@ -38,7 +38,7 @@ public class Person3 {
     @Column(name = "DATEOFBIRTH")
     private LocalDate dateOfBirth;
 
-    @OneToMany(mappedBy = "person")
+    @OneToMany(mappedBy = "person3")
 	@OrderBy("id")
 	private Set<Phone> phones = new HashSet<Phone>();
 

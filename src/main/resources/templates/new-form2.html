@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title th:text="#{title}"></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+	<style>
+		.form-container {
+			display: grid;
+			grid-template-columns: 100px 170px auto;
+			gap: 15px;
+		}
+
+		.submit-button {
+			grid-column: span 3;
+			justify-self: left;
+			width: 80px;
+		}
+		
+		.lang-bar{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 th:text="#{title}"></h2>
+	<p th:text="#{formMessage}"></p>
+
+	<form action="/demo/sendform2" method="post" th:object="${person}">
+		<div class="form-container">
+			<label for="fn" th:text="#{firstNameLabel}"></label>
+			<input type="text" id="fn" th:field="*{firstName}">
+			<div><span th:errors="*{firstName}" class="error"></span></div>                 
+			
+			<label for="ln" th:text="#{lastNameLabel}"></label>
+			<input type="text" id="ln" th:field="*{lastName}">
+			<div><span th:errors="*{lastName}" class="error"></span></div>
+					
+			<input type="submit" th:value="#{submitButtonLabel}" class="submit-button">
+		</div>
+	</form>
+	
+	<div class="lang-bar"><a href="/demo/form?language=tr">Türkçe</a> | <a href="/demo/form?language=en">English</a></div>
+</body>
+
+</html>

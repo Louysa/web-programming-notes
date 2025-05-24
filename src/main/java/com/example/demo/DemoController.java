@@ -150,6 +150,7 @@ public class DemoController {
         return "new-form";
     }
     
+    
     @GetMapping("/list")
     public String displayPersonList(Model model) {
         model.addAttribute("persons", service.findAll());

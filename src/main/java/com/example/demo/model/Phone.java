@@ -22,14 +22,14 @@ public class Phone {
 
 	@ManyToOne
 	@JoinColumn(name = "personid")
-	private Person person;
+	private Person3 person3;
 
 	public Phone() {
 		
 	}
 	
-	public Phone(Person person) {
-		this.person = person;
+	public Phone(Person3 person3) {
+		this.person3 = person3;
 	}
 	
 	public long getId() {
@@ -48,12 +48,12 @@ public class Phone {
 		this.number = number;
 	}
 
-	public Person getPerson() {
-		return person;
+	public Person3 getPerson() {
+		return this.person3;
 	}
 
-	public void setPerson(Person person) {
-		this.person = person;
+	public void setPerson(Person3 person3) {
+		this.person3 = person3;
 	}
 
 }
